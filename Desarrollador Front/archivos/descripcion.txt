@@ -1,0 +1,14 @@
+*Fuentes utilizadas
+
+Titulos
+font-family: 'Rowdies', cursive;
+
+SubParrafos
+font-family: 'Source Code Pro', monospace;
+
+Parrafos
+font-family: 'Roboto', sans-serif;
+
+
+*Colores usados
+

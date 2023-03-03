@@ -1,0 +1,127 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+main{
+  font-family: 'Roboto', sans-serif;
+}
+.titulosSecciones{
+  text-align: center;
+  margin: 1.5rem 0;
+}
+.separadorSecciones{
+  height: 8px;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 21%, rgba(9,9,121,1) 59%);
+  width: 30%;
+  margin: 0 auto 1rem;
+}
+
+h1, h2, h3, h4, h5, h5{
+  font-family: 'Rowdies', cursive;
+  
+}
+
+a{
+  text-decoration: none;
+}
+
+.contenedor__img--logo{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imagen__logo{
+  width: 60%;
+  max-width: 300px;  
+}
+.contenedor--nav{
+  display: flex;
+  column-gap: 3rem;
+  text-align: center;
+}
+.contenedor--nav li{
+  position: relative;
+}
+.contenedor--nava{
+  font-size: 1rem;
+  font-weight: 500;
+}
+.contenedor--nav a::after{
+  content: " ";
+  width: 0;
+  height: 2px;
+  background: red;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  transition: 0.4s all linear;
+}
+.contenedor--nav a:hover::after, 
+.contenedor--nav .home-active::after{
+  width: 80%;
+}
+.contenedor--nav{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(8, 6, 18);
+}
+.contenedor--nav a{
+  font-family: 'Source Code Pro', monospace;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  
+}
+
+@media only screen and (min-width: 768px){
+  .contenedor--nav{
+      flex-direction: row;
+      justify-content: center;
+      
+  }
+  .contenedor--nav a{
+      margin-right: 1.5rem;
+  }
+}
+
+.custom-btn {
+    width: 210px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 2px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .btn-2 {
+    background: #004dff;
+    background: linear-gradient(0deg, #004dff 0%, #004dff 100%);
+    border: none;
+  }
+  
+  .btn-2:before {
+    height: 0%;
+    width: 2px;
+  }
+  
+  .btn-2:hover {
+    box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.2),
+      inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+  }
